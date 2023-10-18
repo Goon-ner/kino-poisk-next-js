@@ -1,0 +1,93 @@
+@use '../utils' as *;
+
+.movie {
+  background-color: $primary;
+  margin: 0px;
+  color: $fonts;
+  @media #{$xl} {
+    margin: 0px 15%;
+  }
+  @media #{$lg} {
+    margin: 0px 10%;
+  }
+  @media #{$md, sm} {
+    margin: 0px 10px;
+  }
+  .movie-flex {
+    display: flex;
+    margin-top: 10px;
+    @media #{$sm} {
+      display: block;
+    }
+    > img {
+      max-width: 45%;
+      margin: 5px;
+      @media #{$sm} {
+        max-width: 85%;
+      }
+    }
+    .creators {
+      margin: 50px 20px;
+    }
+  }
+  .description {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
+.comment-component {
+  margin: 10px 15%;
+  background-color: $primary;
+  color: $fonts;
+
+  @media #{$xl} {
+    margin: 10px 15%;
+  }
+  @media #{$lg} {
+    margin: 10px 10%;
+  }
+  @media #{$md} {
+    margin: 10px 10px;
+  }
+  @media #{$sm} {
+    margin: 10px 10px;
+  }
+}
+.comment-form {
+  justify-content: center;
+  margin: 20px;
+}
+.comment-input {
+  input,
+  textarea,
+  button {
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0cap;
+    background-color: $fonts;
+    color: $primary;
+    font-size: 16px;
+  }
+}
+.comments {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  & p {
+    font-size: 22px;
+  }
+}
+.no-comments {
+  text-align: center;
+  justify-content: center;
+}
+.rating {
+  display: block;
+}
+.stars {
+  display: flex;
+  text-align: end;
+}

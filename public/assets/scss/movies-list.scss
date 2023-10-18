@@ -1,0 +1,52 @@
+@use '../utils' as *;
+
+.movie-li,
+.sort {
+  background-color: $primary;
+  display: flex;
+  margin-top: 0px;
+  box-shadow: 2px 4px 6px 2px rgba(0, 11, 75, 0.517);
+
+  @media #{$xl} {
+    margin: 10px 15%;
+  }
+  @media #{$lg} {
+    margin: 10px 10%;
+  }
+  @media #{$md} {
+    margin: 10px 10px;
+  }
+  @media #{$sm} {
+    display: block;
+    margin: 10px 10px;
+  }
+  .image {
+    max-width: 25%;
+    margin: 5px;
+    @media #{$sm} {
+      max-width: 45%;
+    }
+  }
+  .li-description {
+    margin: 50px 10px;
+  }
+  .title,
+  .director,
+  .actors,
+  .genre {
+    padding: 5px;
+    color: $fonts;
+  }
+}
+a {
+  text-decoration: none;
+  margin: 20px;
+}
+button {
+  padding: 10px;
+  border-radius: 5px;
+  color: $fonts;
+  font-size: 16px;
+  background-color: $primary;
+  cursor: pointer;
+}

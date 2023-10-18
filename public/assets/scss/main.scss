@@ -1,0 +1,9 @@
+@forward 'movie.scss';
+@forward 'header.scss';
+@forward 'movies-list.scss';
+
+#__next {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}

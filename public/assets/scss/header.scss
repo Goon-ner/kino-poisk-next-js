@@ -1,0 +1,15 @@
+@use '../utils' as *;
+
+.header {
+  height: 80px;
+  background-color: $primary;
+  box-shadow: 2px 4px 6px 2px rgba(0, 11, 75, 0.517);
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $fonts;
+    font-size: 20px;
+    margin: 20px;
+  }
+}
